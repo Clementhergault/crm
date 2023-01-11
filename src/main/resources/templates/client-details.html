@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail du client</title>
+</head>
+<body>
+<a href="clients">Retour à la liste des clients</a>
+
+<h1>Fiche Clients</h1>
+
+<p>Id:</p>
+<p th:text="${client.id}"></p>
+
+<p>Entreprise:</p>
+<p th:text="${client.companyName}"></p>
+
+<p>Nom:</p>
+<p th:text="${client.firstName}"></p>
+
+<p>Prenom:</p>
+<p th:text="${client.lastName}"></p>
+</body>
+</html>

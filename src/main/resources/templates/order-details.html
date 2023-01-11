@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail de l'order</title>
+</head>
+<body>
+<a href="orders">Retour à la liste des orders</a>
+<h1>Fiche Orders</h1>
+
+<p>Id:</p>
+<p th:text="${order.id}"></p>
+
+<p>Prestation:</p>
+<p th:text="${order.typePresta}"></p>
+
+<p>Designation:</p>
+<p th:text="${order.designation}"></p>
+
+<p>Duree:</p>
+<p th:text="${order.nbDays}"></p>
+
+<p>Etat:</p>
+<p th:text="${order.state}"></p>
+
+<p>Prix:</p>
+<p th:text="${order.unitPrice}"></p>
+
+<p>Client:</p>
+<p th:text="${order.getClient()}"></p>
+</body>
+</html>
